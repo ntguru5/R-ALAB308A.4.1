@@ -22,7 +22,6 @@ const API_KEY =
  *  - Each option should display text equal to the name of the breed.
  * This function should execute immediately.
  */
-// const API_URL = "https://api.thecatapi.com/";
 async function initialLoad() {
   const breedSelect = document.getElementById("breedSelect");
 
@@ -37,7 +36,6 @@ async function initialLoad() {
     if (!response.ok) {
       throw new Error("Failed to fetch breed data");
     }
-
     const breeds = await response.json();
     console.log("API response:", breeds);
 
